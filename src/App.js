@@ -53,12 +53,15 @@ function App() {
                 <option value="2">Modificación</option>
                 <option value="3">Lista de productos Activos</option>
                 <option value="3">Busqueda</option>
-                <option value="3">Busqueda</option>
+                
                 
               </select>
             </label> 
           </form>
           <br/>
+          
+          <br/>
+
             <from>
             <label for="idProducto" className="espacioLados">
               ID producto 
@@ -95,13 +98,13 @@ function App() {
 
         <br/>
         <div className="container">
-          <button className="btn btn-success" type="submit"> Crear producto </button>
+          <button className="btn btn-success" type="submit"> Modificar producto </button>
           
         </div>
 
         <br/>
         <div className="container">
-          <h2> Lista de productos Creados </h2>
+          <h2> Lista de productos Modificados </h2>
         </div>
 
         <hr className="anchoBorde" />
