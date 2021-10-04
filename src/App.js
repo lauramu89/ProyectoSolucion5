@@ -59,6 +59,43 @@ function App() {
             </label> 
           </form>
           <br/>
+          <div>
+          <from>
+            <label for="idProducto" className="espacioLados">
+              ID producto 
+              <input name="idProducto " placeholder="Ingrese ID producto" type="text"/>
+            </label>
+            
+            <label for="productoInactivo" className="espacioLados">
+                Inactivo 
+              <input name="productoInactivo" type="checkbox"/> 
+            </label>
+            
+          </from>
+          <form className="container flex">  
+            <label for="descripcion" className="espacioLados">
+              Descripción Producucto
+              <br/>
+              <input name="descripcion  " type="text" className="descripcionProducto"/>
+            </label>
+            
+            
+          </form>
+          <form>
+            <label for="UM" className="espacioLados">
+              Unidad de Medida
+              <input name="UM" placeholder="Ej. UN, PACK, CJ" type="text"/>
+            </label>
+            <label for="precioProducto" className="espacioLados">
+              Precio por Unidad de Medida
+              <input name="precioProducto" type="number"/>
+            </label>
+          </form>
+        </div>
+        <br/>
+
+        <br/>
+        
             <from>
             <label for="busquedaProducto" className="espacioLados">
               Buscar producto por
@@ -81,53 +118,20 @@ function App() {
             
           </from>
           <br/>
-            <br/>
+          <br/>
             <div className="container">
               <button className="btn btn-success" type="submit"> Buscar producto </button>
               
             </div>
 
         </div>
-        <br/> entrada
-        <div>
-            <from>
-                <label for="busquedaProducto" className="espacioLados">
-                  Buscar producto por
-                  <select>
-                    <option selected></option>
-                    <option value="1">ID Producto</option>
-                    <option value="3">Descripcion</option>
-                  </select>
-                </label>
-                <label for="busquedaProducto" className="espacioLados">
-                  Tipo de Busqueda 
-                  <select>
-                    <option selected></option>
-                    <option value="2">Empieza por</option>
-                    <option value="3">Continene</option>
-                  </select>
-                    <input name="busquedaProducto " placeholder="Ingrese Información" type="text"/>
-                  </label>
-                
-                
-              </from>
-              <br/>
-                <br/>
-                <div className="container">
-                  <button className="btn btn-success" type="submit"> Buscar producto </button>
-                  
-                </div>
-
-            
-                
-                
-              
-            </div>
+        <br/> 
+        
            
 
         <br/>
         <div className="container">
-          <h2> Lista de productos Encontrados </h2>
+          <h2> Lista de productos Modificados </h2>
         </div>
 
         <hr className="anchoBorde" />
