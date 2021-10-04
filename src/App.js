@@ -87,13 +87,43 @@ function App() {
               
             </div>
 
-         
-            
-            
-          
         </div>
-        <br/>
+        <br/> entrada
+        <div>
+            <from>
+                <label for="busquedaProducto" className="espacioLados">
+                  Buscar producto por
+                  <select>
+                    <option selected></option>
+                    <option value="1">ID Producto</option>
+                    <option value="3">Descripcion</option>
+                  </select>
+                </label>
+                <label for="busquedaProducto" className="espacioLados">
+                  Tipo de Busqueda 
+                  <select>
+                    <option selected></option>
+                    <option value="2">Empieza por</option>
+                    <option value="3">Continene</option>
+                  </select>
+                    <input name="busquedaProducto " placeholder="Ingrese Información" type="text"/>
+                  </label>
+                
+                
+              </from>
+              <br/>
+                <br/>
+                <div className="container">
+                  <button className="btn btn-success" type="submit"> Buscar producto </button>
+                  
+                </div>
 
+            
+                
+                
+              
+            </div>
+           
 
         <br/>
         <div className="container">
