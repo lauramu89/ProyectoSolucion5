@@ -68,11 +68,7 @@ function App() {
               <input name="idProducto " placeholder="Ingrese ID producto" type="text"/>
             </label>
             
-            <label for="productoInactivo" className="espacioLados">
-                Inactivo 
-              <input name="productoInactivo" type="checkbox"/> 
-            </label>
-            
+                        
           </from>
           <form className="container flex">  
             <label for="descripcion" className="espacioLados">
