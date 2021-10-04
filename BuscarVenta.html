@@ -9,7 +9,7 @@
     <link href="./styles/estilos.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link ref="shortcut icon" href="./media/img/logo.ico" type="image/x-icon"/>
-    <title>Ventas</title>
+    <title>Solution Fruits</title>
   </head>
   <body>
     <!----NAVBAR----->
@@ -53,52 +53,18 @@
     <section>
       <div class="container">
         <form>
-          <label for="numPedido" class="espacioLados">
-            No. Pedido
-            <input name="numPedido" placeholder="Ej. 100" type="number"/>
-          </label>
-          <label class="espacioLados">
-            Vendedor
-            <select>
-              <option selected>Encargado del pedido</option>
-              <option value="1">Laura Perez</option>
-              <option value="2">Sandra Lopez</option>
-              <option value="3">Oscar Rodriguez</option>
-              <option value="4">Jairo Ochoa</option>
-            </select>
-          </label>
-        </form>
-        <form>  
-          <label for="fechaVenta" class="espacioLados">
-            Fecha de Venta
-            <input name="fechaVenta" type="date"/>
-          </label>
-          <label class="espacioLados">
-            Forma de Pago
-            <select>
-              <option selected></option>
-              <option value="1">Contado</option>
-              <option value="2">Crédito 30 días</option>
-              <option value="3">Crédito 45 días</option>
-              <option value="1">Crédito 60 días</option>
-            </select>
-          </label> 
-          <label for="fechaPago" class="espacioLados">
-            Fecha de Pago
-            <input name="fechaPago" type="date" disabled/>
-          </label>
-        </form>
-        <form>
-          <label for="nombreCliente" class="espacioLados">
-            Nombre del Cliente
-            <input name="nombreCliente" placeholder="Ej. Martha Sanchez" type="text"/>
-          </label>
-          <label for="idCliente" class="espacioLados">
-            Id. del Cliente
-            <input name="idCliente" type="number"/>
-          </label>
+            <input class="espacioLados" name="filtro" placeholder="Ej. 100" type="radio"/> No. Pedido
+            <input class="espacioLados" name="idCliente" type="number"/></br>
+            <input class="espacioLados" name="filtro" placeholder="Ej. 100" type="radio"/> ID del cliente
+            <input class="espacioLados" name="nombreClinete" type="number"/> </br>
+            <input class="espacioLados"name="filtro" placeholder="Ej. 100" type="radio"/> Nombre del cliente
+            <input class="espacioLados" name="nombreClinete" type="text"/> </br></br>
         </form>
     </section>
+    <div class="container">
+      <button class="btn btn-success" type="submit">Buscar</button>
+      <button class="btn btn-success" type="reset">Limpiar</button>
+    </div>
     <section>
 
       <hr style="border:15px;">
@@ -147,14 +113,9 @@
       </div>
       <br>
       <br>
-      <div >
-        <button class="btn btn-success" type="submit">Confirmar Venta</button>
-        <button class="btn btn-success" type="reset">Cancelar Venta</button>
-      </div>
       </section>
-      <br>
-      <br>
-
+    </br>
+    </br>
       </section>
 
     <footer class="container">
