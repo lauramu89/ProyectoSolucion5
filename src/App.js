@@ -31,7 +31,7 @@ function App() {
                     <ul className="dropdown-menu">
                       <li><a className="dropdown-item" href="#">Ingresar Venta</a></li>
                       <li><a className="dropdown-item" href="#">Estado de Ventas</a></li>
-                      <li><a className="dropdown-item" href="#">Registro de Ventas</a></li>
+                      <li><a className="dropdown-item" href="#">Registro yarn Ventas</a></li>
                     </ul>
                   </li>
                   <li className="nav-item"><a className="nav-link" href="#"> Productos </a></li>
@@ -45,102 +45,116 @@ function App() {
       <main>
         <div className="container">
           <form>
-            <label for="numPedido" className="espacioLados">
-              No. Pedido
-              <input name="numPedido" placeholder="Ej. 100" type="number"/>
-            </label>
-            <label className="espacioLados">
-              Vendedor
-              <select>
-                <option selected>Encargado del pedido</option>
-                <option value="1">Laura Perez</option>
-                <option value="2">Sandra Lopez</option>
-                <option value="3">Oscar Rodriguez</option>
-                <option value="4">Jairo Ochoa</option>
-              </select>
-            </label>
-          </form>
-          <form>  
-            <label for="fechaVenta" className="espacioLados">
-              Fecha de Venta
-              <input name="fechaVenta" type="date"/>
-            </label>
-            <label className="espacioLados">
-              Forma de Pago
+          <label className="espacioLados">
+              Tipo de Actualización de Productos
               <select>
                 <option selected></option>
-                <option value="1">Contado</option>
-                <option value="2">Crédito 30 días</option>
-                <option value="3">Crédito 45 días</option>
-                <option value="1">Crédito 60 días</option>
+                <option value="1">Creación</option>
+                <option value="2">Modificación</option>
+                <option value="3">Lista de productos Activos</option>
+                <option value="3">Busqueda</option>
+                <option value="3">Busqueda</option>
+                
               </select>
             </label> 
-            <label for="fechaPago" className="espacioLados">
-              Fecha de Pago
-              <input name="fechaPago" type="date" disabled/>
+          </form>
+          <br/>
+            <from>
+            <label for="idProducto" className="espacioLados">
+              ID producto 
+              <input name="idProducto " placeholder="Ingrese ID producto" type="text"/>
             </label>
+            
+            <label for="productoInactivo" className="espacioLados">
+                Inactivo 
+              <input name="productoInactivo" type="checkbox"/> 
+            </label>
+            
+          </from>
+          <form className="container flex">  
+            <label for="descripcion" className="espacioLados">
+              Descripción Producucto
+              <br/>
+              <input name="descripcion  " type="text" className="descripcionProducto"/>
+            </label>
+            
+            
           </form>
           <form>
-            <label for="nombreCliente" className="espacioLados">
-              Nombre del Cliente
-              <input name="nombreCliente" placeholder="Ej. Martha Sanchez" type="text"/>
+            <label for="UM" className="espacioLados">
+              Unidad de Medida
+              <input name="UM" placeholder="Ej. UN, PACK, CJ" type="text"/>
             </label>
-            <label for="idCliente" className="espacioLados">
-              Id. del Cliente
-              <input name="idCliente" type="number"/>
+            <label for="precioProducto" className="espacioLados">
+              Precio por Unidad de Medida
+              <input name="precioProducto" type="number"/>
             </label>
           </form>
         </div>
+        <br/>
+
+        <br/>
+        <div className="container">
+          <button className="btn btn-success" type="submit"> Crear producto </button>
+          
+        </div>
+
+        <br/>
+        <div className="container">
+          <h2> Lista de productos Creados </h2>
+        </div>
+
         <hr className="anchoBorde" />
         <table className="container table table-striped espacioLados">
           <thead>
             <tr>
               <th scope="col">#</th>
+              <th scope="col">Id producto</th>
               <th scope="col">Descripción</th>
-              <th scope="col">Cantidad</th>
+              <th scope="col">Unidad de Medida</th>
               <th scope="col">Valor Unitario</th>
-              <th scope="col">Valor Total</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td><select>
-                <option selected>Producto</option>
-              </select></td>
-              <td> 3</td>
-              <td>6000</td>
-              <td>18000</td>
+              <td>PM0110</td>
+              <td>Pulpa de mango 500g  - Packx10</td>
+              <td>Pack</td>
+              <td>19000</td>
             </tr>
             <tr>
               <th scope="row">2</th>
+              <td>PM01</td>
+              <td>Pulpa de mango 500g </td>
+              <td>UN</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>PP0110</td>
               <td>Pulpa de piña 500g  - Packx10</td>
-              <td>1</td>
-              <td>62500</td>
-              <td>62500</td>
+              <td>Pack</td>
+              <td>19000</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>PP01</td>
+              <td>Pulpa de piña 500g </td>
+              <td>UN</td>
+              <td>2000</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Pulpa de fresa 250g  - Unidad</td>
-              <td>5</td>
-              <td>3500</td>
-              <td>17500</td>
+              <td>PF01</td>
+              <td>Pulpa de fresa 500g  </td>
+              <td>UN</td>
+              <td>2500</td>
             </tr>
           </tbody>
         </table>
         
-        <div className="container">
-          <label for="ValorTotal" className="margen">
-            Valor Total de Venta
-            <input name="valorTotal" type="number" disabled/>
-          </label>
-        </div>
-        <br/>
-        <br/>
-        <div className="container">
-          <button className="btn btn-success" type="submit">Confirmar Venta</button>
-          <button className="btn btn-success" type="reset">Cancelar Venta</button>
-        </div>
+        
         <br/>
         <br/>
       </main>

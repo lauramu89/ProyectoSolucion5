@@ -1,6 +1,8 @@
 .espacioLados {
   padding-top: 19px;
   padding-right: 30px;
+  margin: 1sem;
+  
 }
 
 .anchoBorde {
@@ -17,4 +19,9 @@ footer{
   background: #d4e9d2;
   margin: 10px;
   padding: 10px;
+}
+
+.descripcionProducto{
+  padding-top: 80px;
+  padding-right: 400px;
 }
